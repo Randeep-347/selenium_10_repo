@@ -1,3 +1,4 @@
+
 package com.learning.books;
 
 import org.testng.Assert;
@@ -20,6 +21,7 @@ public class TC_DWS_001_Test extends BaseClass{
 		hp.getBooksLink().click();
 		Assert.assertEquals(driver.getTitle(), "Demo Web Shop. Book", "BooksPage is not displayed");
 		test.log(Status.PASS, "Books Page is displayed");
+		test.log(Status.Pass, "Books Page is modified");
 	}
 
 }
